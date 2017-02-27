@@ -1,0 +1,18 @@
+{
+  "name": "hexo-renderer-hyperscript",
+  "version": "0.1.0",
+  "description": "hyperscript renderer plugin for Hexo",
+  "main": "index",
+  "scripts": {},
+  "keywords": [
+    "hexo",
+    "renderer"
+    "hyperscript",
+  ],
+  "author": "Nathan Hughes",
+  "license": "MIT",
+  "dependencies": {
+    "hyperscript": "^2.0.2",
+    "object-assign": "^4.1.1"
+  }
+}
