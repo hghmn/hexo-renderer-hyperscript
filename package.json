@@ -6,8 +6,8 @@
   "scripts": {},
   "keywords": [
     "hexo",
-    "renderer"
-    "hyperscript",
+    "renderer",
+    "hyperscript"
   ],
   "author": "Nathan Hughes",
   "license": "MIT",
