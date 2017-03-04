@@ -1,9 +1,12 @@
 {
   "name": "hexo-renderer-hyperscript",
-  "version": "0.1.0",
   "description": "hyperscript renderer plugin for Hexo",
-  "main": "index",
-  "scripts": {},
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json"
+  },
   "keywords": [
     "hexo",
     "renderer",
@@ -14,5 +17,9 @@
   "dependencies": {
     "hyperscript": "^2.0.2",
     "object-assign": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/hyperscript": "0.0.1",
+    "@types/node": "^7.0.5"
   }
 }

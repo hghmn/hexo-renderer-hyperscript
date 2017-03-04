@@ -1,8 +1,15 @@
-'use strict';
-const h = require('hyperscript');
+import * as h from './h';
 const DOCTYPE = '<!DOCTYPE HTML>\n';
 
-function renderer(data, options) {
+export interface HexoData {
+    path: string;
+    text: string;
+}
+export interface HexoOptions {
+    page: any;
+}
+
+function renderer(data: HexoData, options: HexoOptions) {
     // TODO: deal with no path passed in from hexo case:
     // https://hexo.io/api/renderer.html#Synopsis
     if (!data.path) {
@@ -19,3 +26,8 @@ function renderer(data, options) {
 
 // Register the renderer with hexo
 hexo.extend.renderer.register('js', 'html', renderer, true);
+
+export default {
+    h,
+    renderer
+};
